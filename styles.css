@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    width: 400px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -730,6 +730,14 @@ footer {
     .cta {
         padding: 6rem 2rem;
     }
+
+    .booking-section {
+        padding: 6rem 2rem;
+    }
+
+    .booking-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Accessibility */
@@ -739,6 +747,103 @@ footer {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 4rem 1rem;
+}
+
+.booking-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.booking-intro h3 {
+    color: #89ba31;
+    margin-bottom: 1rem;
+}
+
+.booking-intro p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666666;
+}
+
+.booking-iframe-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.booking-iframe-container iframe {
+    border-radius: 10px;
+    display: block;
+}
+
+.booking-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.booking-tips,
+.contact-backup {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-tips {
+    border-left: 5px solid #ffeb32;
+}
+
+.contact-backup {
+    border-left: 5px solid #89ba31;
+}
+
+.booking-tips h4,
+.contact-backup h4 {
+    color: #89ba31;
+    margin-bottom: 1rem;
+}
+
+.booking-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-tips ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.booking-tips ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #89ba31;
+    font-weight: bold;
+}
+
+.contact-backup p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-backup a {
+    color: #89ba31;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-backup a:hover {
+    text-decoration: underline;
 }
 
 /* Focus states for accessibility */

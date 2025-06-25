@@ -42,6 +42,12 @@ A beautiful, responsive website for Island Vibes Caribbean restaurant featuring 
 - Map placeholder (ready for integration)
 - Multiple contact methods
 
+### 4. Book Page (`book.html`)
+- Integrated TableAgent booking system via iframe
+- Booking information and tips
+- Alternative contact methods for booking assistance
+- Responsive iframe design for all devices
+
 ## File Structure
 
 ```
@@ -49,6 +55,7 @@ island-vibes/
 ├── index.html          # Homepage
 ├── menu.html           # Menu page
 ├── contact.html        # Contact page
+├── book.html           # Booking page with TableAgent iframe
 ├── styles.css          # Main stylesheet
 ├── script.js           # JavaScript functionality
 └── README.md           # This file
@@ -76,8 +83,12 @@ island-vibes/
 
 ## Customization
 
-### Adding Table Booking Widget
-Replace the "Book a Table" button functionality in `script.js` with your preferred booking system integration.
+### Table Booking System
+The booking page (`book.html`) integrates with TableAgent using an iframe. The booking system is fully functional and includes:
+- Responsive iframe that works on all devices
+- Booking tips and information for customers
+- Alternative contact methods for booking assistance
+- Professional styling that matches the site design
 
 ### Adding Online Ordering
 Replace the "Order Online" button functionality with your chosen online ordering platform.
@@ -135,7 +146,7 @@ Replace the map placeholder in `contact.html` with:
 ## Future Enhancements
 
 - [ ] Add image gallery
-- [ ] Integrate real booking system
+- [x] Integrate real booking system (TableAgent)
 - [ ] Add blog section
 - [ ] Implement online ordering
 - [ ] Add customer reviews section
