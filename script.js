@@ -270,3 +270,18 @@ document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
     }
   });
 });
+
+// Update copyright year dynamically
+function updateCopyrightYear() {
+  const currentYear = new Date().getFullYear();
+  const footerElements = document.querySelectorAll(".footer-bottom p");
+
+  footerElements.forEach((element) => {
+    element.innerHTML = `&copy; ${currentYear} Island Vibes. All rights reserved.`;
+  });
+}
+
+// Initialize copyright year on page load
+document.addEventListener("DOMContentLoaded", function () {
+  updateCopyrightYear();
+});
